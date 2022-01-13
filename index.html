@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Http Requests & JavaScript</title>
+  <link rel="stylesheet" href="app.css">
+  <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+  <script src="index.js" defer></script>
+  <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="/resources/demos/style.css">
+</head>
+<body>
+<h1>Create Shipment</h1>
+<form method="post" id="form">
+  <label for="number">Number: </label>
+  <input type="text" id="number" name="number"><br><br>
+  <label for="customer">Customer: </label>
+  <input type="text" id="customer" name="customer"><br><br>
+  <label for="itemname">Item Name: </label>
+  <input type="text" id="itemname" name="itemname"><br><br>
+  <label for="itemname2">Item Name 2: </label>
+  <input type="text" id="itemname2" name="itemname2"><br><br>
+  <label for="requestedDate">Date: </label>
+  <input type="text" id="requestedDate" name="requestedDate"><br><br>
+  <label for="requestedTime">Time: </label>
+  <input type="time" id="requestedTime" name="requestedTime"><br><br>
+
+</form>
+
+<center>
+<div class="control" id="control">
+  <section id="control-center">
+  <div class="button" id="button">
+  <button id="get-btn">GET Data</button>
+    <button id="post-btn">Send Shipment</button>
+  </section>
+</div>
+</center>
+
+ 
+<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+
+<script>
+  $(function () {
+      $("#requestedDate").datepicker({ dateFormat: "yy-mm-dd" });
+  }
+  );
+</script>
+
+</body>
+</html>
